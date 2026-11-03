@@ -1,0 +1,785 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>♪ Música, Adolescentes y Salud Mental ♪ — el blog</title>
+<link rel="stylesheet" href="estilo.css" />
+</head>
+<body>
+<div id="pagina">
+
+  <div class="cinta"><span>♪ ¡Bienvenid@ a mi blog! ♪ &nbsp; La música también cuida tu mente ♥ &nbsp; Actualizado: noviembre de 2026 &nbsp; ★ Proyecto educativo ★ &nbsp; 🛹 Rueda, escucha, respira 🛹 &nbsp; ¡No olvides firmar el libro de visitas! ♪</span></div>
+
+  <div class="cabecera">
+    <video src="./luces.mp4" autoplay muted loop playsinline></video>
+    <span class="sticker s1">SK8 ♪</span><span class="sticker s2">Haz<br>ruido</span><span class="sticker s3">Cuida tu<br>mente</span><span class="sticker s4">♥ Respeto</span>
+    <h1><span class="nota">♫</span> Música, Adolescentes<br>y Salud Mental <span class="nota">♫</span></h1>
+    <p>~ el blog donde la música y las emociones se encuentran ~</p>
+    <div class="estado">✎ Estado de ánimo: <b id="estado-top">inspirad@</b> &nbsp;|&nbsp; ♪ Escuchando: <b>tu playlist favorita</b></div>
+  </div>
+
+  <nav class="menu">
+    <a href="index.html" class="activo">★ Inicio</a>
+    <a href="efectos.html">Efectos</a>
+    <a href="salud-mental.html">Salud mental</a>
+    <a href="generos.html">Géneros</a>
+    <a href="consejos.html">Consejos</a>
+    <a href="guia-padres.html">Guía para padres</a>
+    <a href="recursos.html">Recursos</a>
+  </nav>
+
+  <div class="cuerpo">
+
+    <!-- BARRA LATERAL -->
+    <aside id="lateral">
+      <div class="caja">
+        <h2>⚡ Tu progreso</h2>
+        <div class="in centro">
+          <p>Rango: <b id="prog-rango" style="color:var(--amarillo)">Novat@ del ritmo</b></p>
+          <div class="prog"><i id="prog-barra"></i></div>
+          <p id="prog-n">0 de 9 misiones</p>
+          <p style="font-size:11px;margin-top:4px">Haz el test, los mitos y el reto de 7 días para subir de rango.</p>
+          <button type="button" class="btn-neon btn-sec" id="prog-reset" style="margin-top:6px;font-size:10px;padding:3px 8px">Reiniciar</button>
+        </div>
+      </div>
+
+      <div class="caja">
+        <h2>♥ Sobre este blog</h2>
+        <div class="in centro">
+          <div class="avatar">🛹</div>
+          <p><b>Proyecto educativo</b></p>
+          <p>Un espacio para entender cómo la música influye en las emociones, la identidad y el bienestar de los adolescentes.</p>
+        </div>
+      </div>
+
+      <div class="caja" id="ahora-suena">
+        <h2>♪ Ahora suena</h2>
+        <div class="in">
+          <div class="reproductor" id="as-retro">
+            <div class="eq"><b></b><b></b><b></b><b></b><b></b></div>
+            <span id="as-titulo">▶ Mi playlist de hoy</span>
+            <div class="barra"><i></i></div>
+            <span id="as-ayuda">Elige un género en <a href="generos.html">Géneros</a> y suena aquí.</span>
+          </div>
+          <div class="as-slot" id="as-slot" hidden></div>
+          <button type="button" class="btn-neon btn-sec" id="as-quitar" hidden style="font-size:10px;padding:3px 9px;margin-top:6px">Quitar</button>
+        </div>
+      </div>
+      <div class="caja">
+        <h2>☺ ¿Cómo te sientes?</h2>
+        <div class="in humor">
+          <div class="centro">
+            <button data-e="contentx" data-t="¡Qué bien! Aprovecha con música de ritmo, un rato de baile y compártela con alguien 🎶">😄</button>
+            <button data-e="tranquilx" data-t="Música instrumental, acústica o de tempo lento te ayuda a mantener esa calma 🌿">😌</button>
+            <button data-e="tristx" data-t="Está bien sentirlo. Puedes escuchar algo que te acompañe, pero no te quedes horas en bucle; hablar con alguien también ayuda 💙">😢</button>
+            <button data-e="estresadx" data-t="Respira hondo y prueba música lenta a volumen bajo, sin pantallas por un momento 🫧">😣</button>
+          </div>
+          <p id="humor-msg">Elige una carita</p>
+        </div>
+      </div>
+
+      <div class="caja">
+        <h2>★ Archivo del blog</h2>
+        <div class="in">
+          <ul>
+            <li><a href="#apps">Apps de streaming</a></li>
+            <li><a href="#playlist">Crea tu playlist</a></li>
+            <li><a href="#test">Test: tipo de oyente</a></li>
+            <li><a href="#mitos">Mitos o verdades</a></li>
+            <li><a href="#reto">Reto de 7 días</a></li>
+            <li><a href="#historia">Historia breve</a></li>
+            <li><a href="#temas">Temas principales</a></li>
+            <li><a href="#alerta">Cuándo pedir ayuda</a></li>
+            <li><a href="#fuentes">Fuentes</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="caja">
+        <h2>☁ Nube de etiquetas</h2>
+        <div class="in nube">
+          <a href="efectos.html">emociones</a><a href="salud-mental.html">estrés</a><a href="generos.html">géneros</a><a href="consejos.html">hábitos</a><a href="guia-padres.html">familia</a><a href="recursos.html">recursos</a><a href="#historia">historia</a><a href="efectos.html">identidad</a><a href="salud-mental.html">bienestar</a><a href="consejos.html">playlists</a>
+        </div>
+      </div>
+
+      <div class="caja">
+        <h2>✉ Blogroll</h2>
+        <div class="in">
+          <ul>
+            <li><a href="recursos.html">Material para seguir aprendiendo</a></li>
+            <li><a href="guia-padres.html">Rincón de los padres</a></li>
+            <li><a href="consejos.html">Tips de escucha sana</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="caja">
+        <h2>☆ Visitantes</h2>
+        <div class="in centro">
+          <p>Eres el visitante número</p>
+          <div class="contador" id="contador"></div>
+          <div class="insignias" style="margin-top:8px">
+            <span class="i1">♪ MÚSICA<br>ES VIDA</span><span class="i2">BLOG<br>ESCOLAR</span><span class="i3">100%<br>EDUCATIVO</span><span class="i4">MEJOR VISTO<br>CON AUDÍFONOS</span>
+          </div>
+        </div>
+      </div>
+    </aside>
+
+    <!-- CONTENIDO -->
+    <main id="inicio">
+
+      <article class="entrada">
+        <header>
+          <div class="fecha">📅 2 de noviembre de 2026 &nbsp;|&nbsp; ✎ Publicado por el equipo del blog</div>
+          <h2>¡Bienvenid@! La música acompaña tu historia <span class="nuevo">NUEVO</span></h2>
+        </header>
+        <div class="texto">
+          <span class="pegatina">🎶</span>
+          <p>Hola, hola. Este blog nació para hablar de algo que casi todos los jóvenes hacemos a diario: <b>escuchar música</b>. La música acompaña la identidad, las emociones y el bienestar de los adolescentes, y entender cómo lo hace puede ayudarnos a disfrutarla de forma más consciente.</p>
+          <p>Aquí vas a encontrar información ordenada por secciones. Cada tema tiene su propia página, así que explora con calma y vuelve cuando quieras.</p>
+          <div class="destacada">💡 <b>Dato curioso:</b> la musicoterapia es una disciplina profesional que usa la música como apoyo para el bienestar emocional, y por eso la música y la salud mental se estudian juntas.</div>
+        </div>
+        <footer>
+          <span><span class="etiqueta">bienvenida</span><span class="etiqueta">música</span><span class="etiqueta">bienestar</span></span>
+          <span>💬 <a href="#libro">Comentarios</a></span>
+        </footer>
+      </article>
+
+      <article class="entrada" id="temas">
+        <header>
+          <div class="fecha">📅 2 de noviembre de 2026 &nbsp;|&nbsp; ✎ Publicado por el equipo del blog</div>
+          <h2>Temas principales del blog</h2>
+        </header>
+        <div class="texto">
+          <p>Cada bloque está separado para que encuentres justo lo que buscas. ¡Haz clic en el que más te llame la atención!</p>
+          <div class="rejilla">
+            <a class="mini" href="#historia"><strong>📜 Historia</strong>Recorrido de la música y su vínculo con la cultura y la experiencia humana.</a>
+            <a class="mini" href="efectos.html"><strong>✨ Efectos de la música</strong>Qué influye en el ánimo, la identidad y la regulación emocional.</a>
+            <a class="mini" href="salud-mental.html"><strong>🧠 Salud mental</strong>Cómo la música puede ayudar a reducir el estrés y regular emociones.</a>
+            <a class="mini" href="generos.html"><strong>🎸 Géneros musicales</strong>Los estilos más escuchados y cómo cada uno vive la experiencia juvenil.</a>
+            <a class="mini" href="consejos.html"><strong>✅ Consejos</strong>Recomendaciones para un consumo más saludable y equilibrado.</a>
+            <a class="mini" href="guia-padres.html"><strong>👨‍👩‍👧 Guía para padres</strong>Ideas para acompañar a los adolescentes y orientar un uso responsable.</a>
+            <a class="mini" href="recursos.html"><strong>🔗 Recursos</strong>Enlaces y materiales útiles para seguir aprendiendo.</a>
+          </div>
+        </div>
+        <footer>
+          <span><span class="etiqueta">índice</span><span class="etiqueta">secciones</span></span>
+          <span>💬 <a href="#libro">Comentarios</a></span>
+        </footer>
+      </article>
+
+      <article class="entrada" id="test">
+        <header>
+          <div class="fecha">🎮 Zona interactiva &nbsp;|&nbsp; ✎ Misión 1</div>
+          <h2>Test: ¿Qué tipo de oyente eres? <span class="nuevo">NUEVO</span></h2>
+        </header>
+        <div class="texto">
+          <p>Responde 5 preguntas rápidas y descubre cómo usas la música. No hay respuestas buenas ni malas.</p>
+          <form id="test-form"></form>
+          <p class="aviso-test" id="test-aviso"></p>
+          <button type="button" class="btn-neon" id="test-enviar">Ver mi resultado</button>
+          <button type="button" class="btn-neon btn-sec" id="test-repetir">Repetir</button>
+          <div class="resultado" id="test-res"></div>
+        </div>
+        <footer>
+          <span><span class="etiqueta">test</span><span class="etiqueta">identidad</span></span>
+          <span>💾 Se guarda en tu navegador</span>
+        </footer>
+      </article>
+
+      <article class="entrada" id="mitos">
+        <header>
+          <div class="fecha">🎮 Zona interactiva &nbsp;|&nbsp; ✎ Misión 2</div>
+          <h2>¿Mito o verdad?</h2>
+        </header>
+        <div class="texto">
+          <p>Lee cada frase y elige. Después verás la explicación.</p>
+          <div id="mitos-lista"></div>
+        </div>
+        <footer>
+          <span><span class="etiqueta">mitos</span><span class="etiqueta">salud mental</span></span>
+          <span>💾 Se guarda en tu navegador</span>
+        </footer>
+      </article>
+
+      <article class="entrada" id="reto">
+        <header>
+          <div class="fecha">🎮 Zona interactiva &nbsp;|&nbsp; ✎ Misiones 3 a 9</div>
+          <h2>Reto de 7 días de escucha consciente</h2>
+        </header>
+        <div class="texto">
+          <p>Un pequeño desafío por día. Marca cada uno cuando lo cumplas.</p>
+          <div class="prog"><i id="reto-barra"></i></div>
+          <p id="reto-n" style="margin-bottom:6px">0 de 7 días completados</p>
+          <div id="reto-lista"></div>
+        </div>
+        <footer>
+          <span><span class="etiqueta">reto</span><span class="etiqueta">hábitos</span></span>
+          <span>💾 Se guarda en tu navegador</span>
+        </footer>
+      </article>
+
+      <article class="entrada" id="playlist">
+        <header>
+          <div class="fecha">🎧 Zona interactiva &nbsp;|&nbsp; ✎ Herramienta</div>
+          <h2>Crea tu playlist <span class="nuevo">NUEVO</span></h2>
+        </header>
+        <div class="texto">
+          <p>Elige cómo eres, cómo te sientes y qué vas a hacer, y la página te arma una <b>receta de playlist</b>. Tú pones las canciones: búscalas con los botones o escribe las tuyas.</p>
+          <div class="pl-campos">
+            <label><span>Tu perfil</span>
+              <select id="pl-perfil">
+                <option value="">Sin elegir (haz el test)</option>
+                <option value="a">Calmante</option>
+                <option value="b">Energizante</option>
+                <option value="c">Social</option>
+                <option value="d">Concentrado</option>
+              </select></label>
+            <label><span>Tu ánimo</span>
+              <select id="pl-animo">
+                <option value="contentx">Content@</option>
+                <option value="tranquilx">Tranquil@</option>
+                <option value="tristx">Trist@</option>
+                <option value="estresadx">Estresad@</option>
+              </select></label>
+            <label><span>¿Qué vas a hacer?</span>
+              <select id="pl-actividad">
+                <option value="estudiar">Estudiar o hacer tareas</option>
+                <option value="ejercicio">Hacer ejercicio</option>
+                <option value="dormir">Prepararme para dormir</option>
+                <option value="amigos">Estar con amigos</option>
+                <option value="camino">Ir de camino al colegio</option>
+              </select></label>
+          </div>
+          <button type="button" class="btn-neon" id="pl-generar">Generar receta</button>
+          <div id="pl-receta"></div>
+          <div class="pl-fila" id="pl-fila" style="display:none">
+            <input type="text" id="pl-nombre" maxlength="30" placeholder="Nombre de tu playlist">
+            <button type="button" class="btn-neon" id="pl-guardar">Guardar playlist</button>
+          </div>
+          <p class="pl-msg" id="pl-msg"></p>
+          <h3 style="margin:14px 0 4px;color:var(--azul);font-family:'Courier New',monospace;text-transform:uppercase">Mis playlists</h3>
+          <div id="pl-mias"></div>
+        </div>
+        <footer>
+          <span><span class="etiqueta">playlist</span><span class="etiqueta">bienestar</span></span>
+          <span>💾 Se guarda en tu navegador</span>
+        </footer>
+      </article>
+
+      <article class="entrada" id="apps">
+        <header>
+          <div class="fecha">📡 Zona de streaming &nbsp;|&nbsp; ✎ Explora</div>
+          <h2>Apps de streaming: encuentra tu sonido <span class="nuevo">NUEVO</span></h2>
+        </header>
+        <div class="texto">
+          <p>Hoy hay muchas formas de escuchar música y ninguna es la "correcta". Lo importante es que <b>explores, compares y construyas tu propio gusto</b>, no el que te impone un algoritmo, la moda o el grupo.</p>
+          <div class="destacada">💡 <b>Idea:</b> tu gusto musical es parte de tu identidad y está bien que cambie con el tiempo. Probar cosas nuevas es la mejor forma de descubrir qué te representa.</div>
+
+          <h3 style="margin:10px 0 2px;color:var(--azul);font-family:var(--impact);font-weight:normal;letter-spacing:1.5px">Las apps más conocidas</h3>
+          <div class="apps-grid">
+            <div class="app">
+              <h3>Spotify</h3>
+              <span class="cat">Playlists · Descubrimiento</span>
+              <p>Muy conocida por sus playlists y por sus recomendaciones personalizadas para descubrir artistas nuevos.</p>
+              <a class="btn-link" href="https://www.spotify.com" target="_blank" rel="noopener noreferrer">Ir a Spotify ↗</a>
+            </div>
+            <div class="app">
+              <h3>YouTube Music</h3>
+              <span class="cat">Videos · En vivo</span>
+              <p>Mezcla música oficial con videos, versiones en vivo, covers y remixes.</p>
+              <a class="btn-link" href="https://music.youtube.com" target="_blank" rel="noopener noreferrer">Ir a YouTube Music ↗</a>
+            </div>
+            <div class="app">
+              <h3>Apple Music</h3>
+              <span class="cat">Catálogo · Apple</span>
+              <p>Gran catálogo y buena integración con los dispositivos de Apple.</p>
+              <a class="btn-link" href="https://music.apple.com" target="_blank" rel="noopener noreferrer">Ir a Apple Music ↗</a>
+            </div>
+            <div class="app">
+              <h3>Amazon Music</h3>
+              <span class="cat">Altavoces · Amazon</span>
+              <p>Se integra con los servicios de Amazon y con sus altavoces con asistente de voz.</p>
+              <a class="btn-link" href="https://music.amazon.com" target="_blank" rel="noopener noreferrer">Ir a Amazon Music ↗</a>
+            </div>
+            <div class="app">
+              <h3>Deezer</h3>
+              <span class="cat">Recomendaciones</span>
+              <p>Ofrece recomendaciones personalizadas para descubrir canciones según lo que escuchas.</p>
+              <a class="btn-link" href="https://www.deezer.com" target="_blank" rel="noopener noreferrer">Ir a Deezer ↗</a>
+            </div>
+            <div class="app">
+              <h3>TIDAL</h3>
+              <span class="cat">Calidad de audio</span>
+              <p>Se enfoca en la calidad de audio y en contenido sobre los artistas.</p>
+              <a class="btn-link" href="https://tidal.com" target="_blank" rel="noopener noreferrer">Ir a TIDAL ↗</a>
+            </div>
+            <div class="app">
+              <h3>SoundCloud</h3>
+              <span class="cat">Independiente · Remixes</span>
+              <p>Ideal para encontrar artistas emergentes, remixes y música independiente.</p>
+              <a class="btn-link" href="https://soundcloud.com" target="_blank" rel="noopener noreferrer">Ir a SoundCloud ↗</a>
+            </div>
+            <div class="app">
+              <h3>Bandcamp</h3>
+              <span class="cat">Apoya al artista</span>
+              <p>Permite escuchar y apoyar directamente a artistas independientes comprando su música.</p>
+              <a class="btn-link" href="https://bandcamp.com" target="_blank" rel="noopener noreferrer">Ir a Bandcamp ↗</a>
+            </div>
+          </div>
+
+          <h3 style="margin:10px 0 2px;color:var(--azul);font-family:var(--impact);font-weight:normal;letter-spacing:1.5px">Cómo construir tu propio gusto musical</h3>
+          <ul class="tips-gusto">
+            <li>Prueba un género nuevo cada semana y anota qué sentiste al escucharlo.</li>
+            <li>Haz playlists según tu ánimo o tu actividad con el <a href="#playlist">creador de playlist</a> de esta página.</li>
+            <li>Busca artistas independientes y de tu región, y también sonidos de otros países.</li>
+            <li>Pregúntate: "¿me gusta de verdad o solo porque está de moda?" y escucha con calma.</li>
+            <li>Comparte tus descubrimientos con tus amigos, pero respeta que cada quien tiene su gusto.</li>
+            <li>Cuida el volumen y descansa los oídos entre sesiones.</li>
+          </ul>
+
+          <h3 style="margin:10px 0 2px;color:var(--azul);font-family:var(--impact);font-weight:normal;letter-spacing:1.5px">Mi ADN musical</h3>
+          <p>Completa tu carnet. Es solo para ti y se guarda en tu navegador.</p>
+          <div class="adn-campos">
+            <label><span>Género que me representa 1</span><input type="text" id="adn-g1" maxlength="30" placeholder="Ej: rock alternativo"></label>
+            <label><span>Género que me representa 2</span><input type="text" id="adn-g2" maxlength="30" placeholder="Ej: reguetón"></label>
+            <label><span>Género que me representa 3</span><input type="text" id="adn-g3" maxlength="30" placeholder="Ej: lo-fi"></label>
+            <label><span>Un artista que descubrí yo solo/a</span><input type="text" id="adn-art" maxlength="40" placeholder="Nombre del artista"></label>
+            <label><span>Género nuevo que probaré esta semana</span><input type="text" id="adn-nuevo" maxlength="30" placeholder="Ej: jazz"></label>
+          </div>
+          <button type="button" class="btn-neon" id="adn-guardar">Guardar mi carnet</button>
+          <button type="button" class="btn-neon btn-sec" id="adn-borrar">Borrar</button>
+          <p class="pl-msg" id="adn-msg"></p>
+          <div class="carnet" id="adn-carnet"></div>
+
+          <p style="margin-top:12px;font-size:11px">ℹ️ Cada app tiene sus propias condiciones, planes gratuitos o de pago y una edad mínima para crear cuenta. Antes de registrarte o pagar, habla con un adulto de confianza. Esta lista no es una recomendación comercial de ninguna marca ni incluye todas las apps que existen.</p>
+        </div>
+        <footer>
+          <span><span class="etiqueta">streaming</span><span class="etiqueta">identidad</span><span class="etiqueta">gusto propio</span></span>
+          <span>💾 Se guarda en tu navegador</span>
+        </footer>
+      </article>
+
+      <article class="entrada" id="historia">
+        <header>
+          <div class="fecha">📅 Archivo histórico &nbsp;|&nbsp; ✎ Sección: Historia</div>
+          <h2>Historia breve de la música</h2>
+        </header>
+        <div class="texto">
+          <p>La música ha acompañado a la humanidad desde siempre: en la cultura, en la celebración y en la expresión emocional. Un mini recorrido:</p>
+          <div class="archivo">
+            <div><b>Prehistoria:</b> la voz, el ritmo del cuerpo y los primeros instrumentos fueron formas de comunicarse y de reunirse en comunidad.</div>
+            <div><b>Civilizaciones antiguas:</b> la música se unió a rituales, ceremonias y celebraciones en muchas culturas del mundo.</div>
+            <div><b>Siglo XX:</b> la radio y las grabaciones llevaron la música a todos los hogares y nacieron estilos que marcaron a generaciones de jóvenes.</div>
+            <div><b>Hoy:</b> con las plataformas de streaming y los audífonos, los adolescentes llevan su banda sonora a todas partes.</div>
+          </div>
+        </div>
+        <footer>
+          <span><span class="etiqueta">historia</span><span class="etiqueta">cultura</span></span>
+          <span>💬 <a href="#libro">Comentarios</a></span>
+        </footer>
+      </article>
+
+      <article class="entrada" id="alerta">
+        <header>
+          <div class="fecha">📅 2 de noviembre de 2026 &nbsp;|&nbsp; ✎ Aviso importante</div>
+          <h2>La música ayuda, pero no lo es todo</h2>
+        </header>
+        <div class="texto">
+          <p>Escuchar música puede acompañar y aliviar, pero no reemplaza el apoyo profesional.</p>
+          <div class="alerta">⚠️ <b>Ojo:</b> si te sientes triste, ansios@ o sin ganas durante mucho tiempo, habla con un adulto de confianza o con un profesional de la salud mental. Pedir ayuda es una señal de valentía.</div>
+          <p>Más ideas en <a href="salud-mental.html">Salud mental</a> y <a href="guia-padres.html">Guía para padres</a>.</p>
+        </div>
+        <footer>
+          <span><span class="etiqueta">ayuda</span><span class="etiqueta">salud mental</span></span>
+          <span>💬 <a href="#libro">Comentarios</a></span>
+        </footer>
+      </article>
+
+      <div class="caja" id="libro">
+        <h2>✎ Libro de visitas</h2>
+        <div class="in">
+          <p>¡Déjanos tu mensaje! (se guarda solo en tu navegador)</p>
+          <form id="form-libro" style="margin-top:6px;display:grid;gap:5px">
+            <input id="nombre" placeholder="Tu apodo" maxlength="24" style="padding:4px;border:2px solid #00f0ff;font:inherit">
+            <textarea id="mensaje" rows="3" placeholder="Escribe aquí..." maxlength="200" style="padding:4px;border:2px solid #00f0ff;font:inherit"></textarea>
+            <button style="font:inherit;font-weight:bold;padding:4px;border:2px solid #00f0ff;background:linear-gradient(#ff2bd6,#6a1bff);color:#fff;text-shadow:0 0 6px #000;cursor:pointer;border-radius:4px">Firmar ♥</button>
+          </form>
+          <ul id="mensajes" style="margin-top:10px"></ul>
+        </div>
+      </div>
+
+      <details class="fuentes" id="fuentes">
+        <summary>📚 Fuentes y bibliografía (clic para abrir)</summary>
+        <div class="in">
+          <p>Consulta la lista completa de fuentes en la sección <a href="recursos.html">Recursos</a>.</p>
+        </div>
+      </details>
+
+    </main>
+  </div>
+
+  <div class="pie">
+    <div class="construccion"><span>🚧 Sitio en construcción 🚧</span></div>
+    <p>© 2026 Música, Adolescentes y Salud Mental &nbsp;|&nbsp; Hecho con ♥ y mucha música</p>
+    <p><a href="#inicio">↑ Volver arriba</a></p>
+  </div>
+</div>
+
+<script src="app.js"></script>
+<script>
+  // Libro de visitas (guardado local)
+  (function(){
+    var lista = document.getElementById('mensajes');
+    var datos = [];
+    try{ datos = JSON.parse(localStorage.getItem('libro')||'[]'); }catch(e){}
+    function pintar(){
+      lista.innerHTML = '';
+      if(!datos.length){ var li=document.createElement('li'); li.textContent='Aún no hay mensajes. ¡Sé el primero!'; lista.appendChild(li); return; }
+      datos.slice().reverse().forEach(function(m){
+        var li=document.createElement('li');
+        var b=document.createElement('b'); b.textContent=m.n+': ';
+        li.appendChild(b); li.appendChild(document.createTextNode(m.t));
+        lista.appendChild(li);
+      });
+    }
+    document.getElementById('form-libro').addEventListener('submit', function(e){
+      e.preventDefault();
+      var n=document.getElementById('nombre').value.trim()||'Anónim@';
+      var t=document.getElementById('mensaje').value.trim();
+      if(!t) return;
+      datos.push({n:n,t:t});
+      try{ localStorage.setItem('libro', JSON.stringify(datos)); }catch(e){}
+      this.reset(); pintar();
+    });
+    pintar();
+  })();
+
+  // ===== Zona interactiva =====
+  (function(){
+    var KEY='estado-cyber';
+    var st={tipo:null,mitos:[null,null,null,null],dias:[false,false,false,false,false,false,false]};
+    try{var g=JSON.parse(localStorage.getItem(KEY)||'null'); if(g&&g.mitos&&g.dias){st=g;}}catch(e){}
+    function guardar(){try{localStorage.setItem(KEY,JSON.stringify(st));}catch(e){}}
+    function el(t,c,x){var e=document.createElement(t); if(c)e.className=c; if(x!==undefined)e.textContent=x; return e;}
+
+    var rangos=[[0,'Novat@ del ritmo'],[1,'Explorador'],[4,'Oyente consciente'],[7,'Maestr@ del ritmo'],[9,'Leyenda cyberpunk']];
+    function pintar(){
+      var mitosOk=st.mitos.every(function(m){return m!==null;});
+      var diasOk=st.dias.filter(Boolean).length;
+      var n=(st.tipo?1:0)+(mitosOk?1:0)+diasOk;
+      var r=rangos[0][1];
+      rangos.forEach(function(x){ if(n>=x[0]) r=x[1]; });
+      document.getElementById('prog-rango').textContent=r;
+      document.getElementById('prog-barra').style.width=Math.round(n/9*100)+'%';
+      document.getElementById('prog-n').textContent=n+' de 9 misiones';
+      document.getElementById('reto-barra').style.width=Math.round(diasOk/7*100)+'%';
+      document.getElementById('reto-n').textContent=diasOk+' de 7 días completados';
+    }
+
+    // ---- Test ----
+    var preguntas=[
+      {q:'1. Cuando estás estresad@, ¿qué haces con la música?',o:['Pongo algo suave para calmarme','Subo el ritmo con algo lleno de energía','La comparto o la escucho con alguien','Prefiero música sin letra o silencio']},
+      {q:'2. Para estudiar o hacer tareas...',o:['Música tranquila de fondo','Una playlist movida para arrancar','Lo que esté sonando entre amigos','Instrumental o nada']},
+      {q:'3. ¿Cómo descubres música nueva?',o:['Con playlists según mi estado de ánimo','Buscando canciones con mucho ritmo','Por amigos y redes sociales','Explorando géneros por mi cuenta']},
+      {q:'4. Una canción te gusta cuando...',o:['me hace sentir paz','me dan ganas de moverme','la puedo cantar con otros','su melodía me ayuda a pensar']},
+      {q:'5. Tu momento favorito para escuchar música',o:['Antes de dormir','Haciendo ejercicio o yendo al colegio','Con amigos o en una reunión','En un rato de calma a solas']}
+    ];
+    var letras=['a','b','c','d'];
+    var tipos={
+      a:{t:'🌿 Oyente Calmante',d:'Usas la música para bajar las revoluciones y sentirte en paz.',c:'Genial herramienta. Combínala con respiración y buen descanso, y si el malestar dura, habla con un adulto de confianza o un profesional.'},
+      b:{t:'⚡ Oyente Energizante',d:'La música es tu combustible para activarte y moverte.',c:'Cuida el volumen y los tiempos con audífonos, y alterna con música más suave antes de dormir.'},
+      c:{t:'🎤 Oyente Social',d:'Para ti la música es una forma de conectar con otras personas.',c:'Compartir música crea vínculos. Date también ratos a solas para notar qué te hace sentir cada canción.'},
+      d:{t:'🧠 Oyente Concentrado',d:'Usas la música como herramienta para pensar y enfocarte.',c:'La música instrumental o a volumen bajo suele distraer menos. Haz pausas y comprueba si de verdad te ayuda a concentrarte.'}
+    };
+    var form=document.getElementById('test-form');
+    preguntas.forEach(function(p,i){
+      var d=el('div','pregunta'); d.appendChild(el('p','',p.q));
+      p.o.forEach(function(txt,j){
+        var l=el('label','op'); var inp=document.createElement('input');
+        inp.type='radio'; inp.name='p'+i; inp.value=letras[j];
+        l.appendChild(inp); l.appendChild(document.createTextNode(txt)); d.appendChild(l);
+      });
+      form.appendChild(d);
+    });
+    function mostrarRes(k){
+      var r=document.getElementById('test-res'); r.innerHTML='';
+      var tp=tipos[k];
+      r.appendChild(el('h3','',tp.t)); r.appendChild(el('p','',tp.d));
+      var c=el('p'); var b=el('b','','Consejo: '); c.appendChild(b); c.appendChild(document.createTextNode(tp.c)); r.appendChild(c);
+      r.className='resultado ver';
+    }
+    document.getElementById('test-enviar').addEventListener('click',function(){
+      var cuenta={a:0,b:0,c:0,d:0}, faltan=0;
+      for(var i=0;i<preguntas.length;i++){
+        var ch=form.querySelector('input[name=p'+i+']:checked');
+        if(!ch) faltan++; else cuenta[ch.value]++;
+      }
+      var av=document.getElementById('test-aviso');
+      if(faltan){ av.textContent='Te faltan '+faltan+' pregunta(s) por responder.'; return; }
+      av.textContent='';
+      var mejor='a'; letras.forEach(function(k){ if(cuenta[k]>cuenta[mejor]) mejor=k; });
+      st.tipo=mejor; guardar(); mostrarRes(mejor); pintar();
+    });
+    document.getElementById('test-repetir').addEventListener('click',function(){
+      form.reset(); st.tipo=null; guardar();
+      document.getElementById('test-res').className='resultado';
+      document.getElementById('test-aviso').textContent=''; pintar();
+    });
+    if(st.tipo && tipos[st.tipo]) mostrarRes(st.tipo);
+
+    // ---- Mitos ----
+    var mitos=[
+      {a:'Escuchar música mientras estudias siempre ayuda a concentrarte.',r:'mito',e:'Depende de la tarea y de la persona. Las letras pueden distraer al leer o escribir; probar música instrumental o a volumen bajo suele ser buena idea.'},
+      {a:'Escuchar música triste siempre empeora el ánimo.',r:'mito',e:'Para muchas personas ayuda a poner en palabras lo que sienten. Lo que conviene vigilar es quedarse horas dándole vueltas a lo mismo.'},
+      {a:'Usar audífonos a volumen alto durante mucho tiempo puede dañar la audición.',r:'verdad',e:'Por eso se recomienda bajar el volumen y hacer pausas para descansar el oído.'},
+      {a:'La música puede reemplazar la ayuda de un profesional de salud mental.',r:'mito',e:'La música acompaña, pero no sustituye. Si el malestar dura, habla con un adulto de confianza o con un profesional.'}
+    ];
+    var lista=document.getElementById('mitos-lista');
+    var refs=[];
+    function revelar(i){
+      var m=mitos[i], x=refs[i], ok=(st.mitos[i]===m.r);
+      x.b1.disabled=true; x.b2.disabled=true;
+      x.ex.textContent=(ok?'✔ ¡Correcto! ':'✖ Casi. La respuesta era "'+(m.r==='mito'?'es un mito':'es verdad')+'". ')+m.e;
+      x.ex.className='expl ver'+(ok?'':' mal');
+    }
+    mitos.forEach(function(m,i){
+      var d=el('div','mito'); d.appendChild(el('div','afirm','“'+m.a+'”'));
+      var bs=el('div','botones');
+      var b1=el('button','btn-neon btn-sec','Es un mito'); b1.type='button';
+      var b2=el('button','btn-neon btn-sec','Es verdad'); b2.type='button';
+      b1.addEventListener('click',function(){ st.mitos[i]='mito'; guardar(); revelar(i); pintar(); });
+      b2.addEventListener('click',function(){ st.mitos[i]='verdad'; guardar(); revelar(i); pintar(); });
+      bs.appendChild(b1); bs.appendChild(b2); d.appendChild(bs);
+      var ex=el('div','expl'); d.appendChild(ex);
+      lista.appendChild(d); refs.push({b1:b1,b2:b2,ex:ex});
+      if(st.mitos[i]) revelar(i);
+    });
+
+    // ---- Reto 7 dias ----
+    var dias=[
+      'Escribe cómo te sientes antes y después de escuchar tu canción favorita.',
+      'Escucha 15 minutos de música sin hacer nada más. Solo escucha.',
+      'Prueba música instrumental mientras estudias y anota si te concentras mejor.',
+      'Baja un poco el volumen y fíjate cuánto tiempo usas audífonos.',
+      'Comparte con un amigo o familiar una canción que te haya ayudado.',
+      'Descubre un género que normalmente no escuchas.',
+      'Crea una mini playlist para calmarte y otra para animarte.'
+    ];
+    var rl=document.getElementById('reto-lista');
+    dias.forEach(function(t,i){
+      var l=el('label','reto-dia'+(st.dias[i]?' hecho':''));
+      var c=document.createElement('input'); c.type='checkbox'; c.checked=!!st.dias[i];
+      c.addEventListener('change',function(){
+        st.dias[i]=c.checked; l.className='reto-dia'+(c.checked?' hecho':''); guardar(); pintar();
+      });
+      l.appendChild(c); l.appendChild(el('span','dia','Día '+(i+1))); l.appendChild(el('span','',t));
+      rl.appendChild(l);
+    });
+
+    document.getElementById('prog-reset').addEventListener('click',function(){
+      try{localStorage.removeItem(KEY);}catch(e){}
+      location.reload();
+    });
+    pintar();
+  })();
+
+  // ===== Creador de playlist =====
+  (function(){
+    var KEY='playlists-cyber';
+    var lista=[];
+    try{ lista=JSON.parse(localStorage.getItem(KEY)||'[]'); if(!Array.isArray(lista)) lista=[]; }catch(e){ lista=[]; }
+    function guardarLista(){ try{ localStorage.setItem(KEY,JSON.stringify(lista)); }catch(e){} }
+    function el(t,c,x){ var e=document.createElement(t); if(c) e.className=c; if(x!==undefined) e.textContent=x; return e; }
+    function msg(t){ document.getElementById('pl-msg').textContent=t; }
+
+    var actividades={
+      estudiar:{n:'Estudiar o hacer tareas',b:[
+        {t:'Calentamiento',r:'Ritmo medio-lento. Poca letra, para entrar en ambiente.',q:'lo-fi instrumental para estudiar'},
+        {t:'Centro',r:'Ritmo lento y constante. Instrumental o volumen bajo para no distraerte.',q:'piano instrumental para concentración'},
+        {t:'Cierre',r:'Ritmo suave para descansar la mente.',q:'música relajante instrumental'}]},
+      ejercicio:{n:'Hacer ejercicio',b:[
+        {t:'Calentamiento',r:'Ritmo medio y constante para entrar en calor.',q:'playlist calentamiento ejercicio'},
+        {t:'Centro',r:'Ritmo rápido y con energía. Cuida el volumen.',q:'playlist para entrenar energía'},
+        {t:'Cierre',r:'Ritmo lento para enfriar y estirar.',q:'música para estiramiento y relajación'}]},
+      dormir:{n:'Prepararme para dormir',b:[
+        {t:'Calentamiento',r:'Ritmo lento para bajar las revoluciones.',q:'música suave para relajarse antes de dormir'},
+        {t:'Centro',r:'Muy lento, sin letra y con volumen bajo.',q:'ambient para dormir'},
+        {t:'Cierre',r:'Sonidos suaves. Usa un temporizador para que se apague sola.',q:'sonidos relajantes para dormir'}]},
+      amigos:{n:'Estar con amigos',b:[
+        {t:'Calentamiento',r:'Ritmo medio, con canciones que todos conozcan.',q:'playlist para reunirse con amigos'},
+        {t:'Centro',r:'Ritmo rápido, para cantar y bailar en grupo.',q:'música para bailar y cantar en grupo'},
+        {t:'Cierre',r:'Ritmo medio-lento para cerrar el plan.',q:'canciones para cantar juntos'}]},
+      camino:{n:'Ir de camino al colegio',b:[
+        {t:'Calentamiento',r:'Ritmo medio, para arrancar el día.',q:'playlist para ir al colegio'},
+        {t:'Centro',r:'Ritmo medio-rápido para animarte. Ojo con el volumen en la calle.',q:'pop ritmo medio para el camino'},
+        {t:'Cierre',r:'Ritmo suave para llegar tranquil@.',q:'música tranquila para el camino'}]}
+    };
+    var perfiles={a:'Calmante',b:'Energizante',c:'Social',d:'Concentrado'};
+    var perfilKw={a:'acústica',b:'con ritmo',c:'para compartir',d:'instrumental'};
+    var animos={contentx:'Content@',tranquilx:'Tranquil@',tristx:'Trist@',estresadx:'Estresad@'};
+
+    var actual=null; // receta mostrada
+
+    function tipoDelTest(){
+      try{ var g=JSON.parse(localStorage.getItem('estado-cyber')||'null'); if(g&&g.tipo) return g.tipo; }catch(e){}
+      return '';
+    }
+    var selPerfil=document.getElementById('pl-perfil');
+    var selAnimo=document.getElementById('pl-animo');
+    var selAct=document.getElementById('pl-actividad');
+    if(tipoDelTest()) selPerfil.value=tipoDelTest();
+    document.querySelectorAll('.humor button').forEach(function(b){
+      b.addEventListener('click',function(){ if(animos[b.dataset.e]) selAnimo.value=b.dataset.e; });
+    });
+
+    function enlaces(q){
+      var e=encodeURIComponent(q), p=el('p');
+      var defs=[['Spotify','https://open.spotify.com/search/'+e],['YouTube Music','https://music.youtube.com/search?q='+e],['YouTube','https://www.youtube.com/results?search_query='+e]];
+      defs.forEach(function(d){
+        var a=el('a','btn-link','🔍 '+d[0]); a.href=d[1]; a.target='_blank'; a.rel='noopener noreferrer'; p.appendChild(a);
+      });
+      return p;
+    }
+
+    function generar(){
+      if(!selPerfil.value && tipoDelTest()) selPerfil.value=tipoDelTest();
+      var act=selAct.value, ani=selAnimo.value, per=selPerfil.value;
+      var base=actividades[act];
+      var bl=base.b.map(function(x){ return {t:x.t,r:x.r,q:x.q}; });
+      var notas=['Cuida el volumen: mantenlo moderado y haz pausas con los audífonos.'];
+
+      if(per && act!=='dormir') bl[0].q+=' '+perfilKw[per];
+      if(per) notas.push('Tu perfil es '+perfiles[per]+': por eso añadimos la palabra clave "'+perfilKw[per]+'" en la búsqueda del primer bloque.');
+
+      if(ani==='contentx'){ bl[1].r+=' Aprovecha tu buen ánimo: puedes subir un poco el ritmo.'; }
+      if(ani==='tranquilx'){ notas.push('Mantén una mezcla suave para conservar esa calma.'); }
+      if(ani==='tristx'){
+        bl[0].r='Empieza con música que te acompañe: no pasa nada por reconocer lo que sientes.'; bl[0].q='música acústica emotiva';
+        bl[2].r='Termina con algo de ritmo medio que te dé un poco de ánimo.'; bl[2].q='canciones suaves con mensaje esperanzador';
+        notas.push('Si te sientes trist@ durante muchos días, habla con un adulto de confianza o con un profesional.');
+      }
+      if(ani==='estresadx'){
+        bl[1].r='Ritmo lento, sin letra y con volumen bajo.'; bl[1].q='música relajante sin letra para el estrés';
+        notas.push('Respira hondo y haz una pausa de pantallas entre bloques.');
+      }
+
+      actual={act:act,ani:ani,per:per,bloques:bl};
+      var r=document.getElementById('pl-receta'); r.innerHTML='';
+      r.appendChild(el('p','', 'Receta para: '+base.n+' · ánimo '+animos[ani]+(per?' · perfil '+perfiles[per]:'')));
+      bl.forEach(function(x,i){
+        var d=el('div','bloque');
+        d.appendChild(el('h4','',(i+1)+' · '+x.t));
+        d.appendChild(el('p','',x.r));
+        d.appendChild(enlaces(x.q));
+        var ta=document.createElement('textarea'); ta.rows=3; ta.maxLength=1500; ta.className='pl-ta';
+        ta.placeholder='Tus canciones de este bloque (una por línea): Título - Artista';
+        d.appendChild(ta); r.appendChild(d);
+      });
+      var nd=el('div','destacada'); nd.appendChild(el('b','','💡 Tips'));
+      var ul=el('ul'); ul.style.marginLeft='18px';
+      notas.forEach(function(n){ ul.appendChild(el('li','',n)); }); nd.appendChild(ul); r.appendChild(nd);
+      document.getElementById('pl-fila').style.display='flex';
+      document.getElementById('pl-nombre').value='';
+      msg('');
+    }
+    document.getElementById('pl-generar').addEventListener('click',generar);
+
+    function lineas(txt){
+      return txt.split('\n').map(function(l){return l.trim().slice(0,100);}).filter(Boolean).slice(0,30);
+    }
+    document.getElementById('pl-guardar').addEventListener('click',function(){
+      if(!actual) return;
+      var tas=document.querySelectorAll('#pl-receta .pl-ta'), total=0;
+      var bloques=actual.bloques.map(function(b,i){
+        var c=lineas(tas[i]?tas[i].value:''); total+=c.length; return {t:b.t,c:c};
+      });
+      if(!total){ msg('Agrega al menos una canción antes de guardar.'); return; }
+      var nombre=document.getElementById('pl-nombre').value.trim()||'Mi playlist';
+      lista.push({nombre:nombre.slice(0,30),act:actual.act,ani:actual.ani,per:actual.per,bloques:bloques});
+      guardarLista(); pintarLista(); msg('¡Playlist guardada! La encuentras abajo en "Mis playlists".');
+    });
+
+    function textoDe(pl){
+      var t='Playlist: '+pl.nombre+'\nActividad: '+actividades[pl.act].n+'\nÁnimo: '+animos[pl.ani]+(pl.per?'\nPerfil: '+perfiles[pl.per]:'')+'\n';
+      pl.bloques.forEach(function(b){
+        t+='\n== '+b.t+' ==\n';
+        if(!b.c.length) t+='(sin canciones)\n';
+        b.c.forEach(function(c,i){ t+=(i+1)+'. '+c+'\n'; });
+      });
+      return t;
+    }
+    function copiar(txt){
+      function respaldo(){
+        var ta=document.createElement('textarea'); ta.value=txt; document.body.appendChild(ta); ta.select();
+        var ok=false; try{ ok=document.execCommand('copy'); }catch(e){}
+        document.body.removeChild(ta); msg(ok?'Copiada al portapapeles.':'No se pudo copiar. Usa Descargar .txt.');
+      }
+      if(navigator.clipboard && navigator.clipboard.writeText){
+        navigator.clipboard.writeText(txt).then(function(){ msg('Copiada al portapapeles.'); },respaldo);
+      } else respaldo();
+    }
+    function descargar(pl){
+      var blob=new Blob([textoDe(pl)],{type:'text/plain;charset=utf-8'});
+      var a=document.createElement('a'); a.href=URL.createObjectURL(blob);
+      a.download=(pl.nombre.replace(/[^a-zA-Z0-9áéíóúñÁÉÍÓÚÑ _-]/g,'').trim()||'playlist')+'.txt';
+      document.body.appendChild(a); a.click(); document.body.removeChild(a);
+      setTimeout(function(){ URL.revokeObjectURL(a.href); },1000);
+    }
+    function pintarLista(){
+      var c=document.getElementById('pl-mias'); c.innerHTML='';
+      if(!lista.length){ c.appendChild(el('p','','Aún no has guardado ninguna playlist.')); return; }
+      lista.forEach(function(pl,idx){
+        var d=el('div','pl-guardada');
+        d.appendChild(el('strong','',pl.nombre));
+        d.appendChild(el('small','',actividades[pl.act].n+' · ánimo '+animos[pl.ani]+(pl.per?' · perfil '+perfiles[pl.per]:'')));
+        pl.bloques.forEach(function(b){
+          if(!b.c.length) return;
+          d.appendChild(el('b','',b.t));
+          var ul=el('ul'); b.c.forEach(function(x){ ul.appendChild(el('li','',x)); }); d.appendChild(ul);
+        });
+        var acc=el('div','acc');
+        var b1=el('button','btn-neon btn-sec','Copiar'); b1.type='button'; b1.addEventListener('click',function(){ copiar(textoDe(pl)); });
+        var b2=el('button','btn-neon btn-sec','Descargar .txt'); b2.type='button'; b2.addEventListener('click',function(){ descargar(pl); });
+        var b3=el('button','btn-neon btn-sec','Borrar'); b3.type='button'; b3.addEventListener('click',function(){ lista.splice(idx,1); guardarLista(); pintarLista(); });
+        acc.appendChild(b1); acc.appendChild(b2); acc.appendChild(b3); d.appendChild(acc);
+        c.appendChild(d);
+      });
+    }
+    pintarLista();
+  })();
+
+  // ===== Mi ADN musical =====
+  (function(){
+    var KEY='adn-musical';
+    var ids=['adn-g1','adn-g2','adn-g3','adn-art','adn-nuevo'];
+    function el(t,c,x){ var e=document.createElement(t); if(c) e.className=c; if(x!==undefined) e.textContent=x; return e; }
+    function leer(){ var d={}; ids.forEach(function(i){ d[i]=document.getElementById(i).value.trim().slice(0,40); }); return d; }
+    function pintar(d){
+      var c=document.getElementById('adn-carnet'); c.innerHTML='';
+      var gen=[d['adn-g1'],d['adn-g2'],d['adn-g3']].filter(Boolean);
+      c.appendChild(el('h4','','🎧 MI ADN MUSICAL'));
+      if(gen.length){ var p=el('p'); p.appendChild(el('b','','Me representan: ')); p.appendChild(document.createTextNode(gen.join(' · '))); c.appendChild(p); }
+      if(d['adn-art']){ var q=el('p'); q.appendChild(el('b','','Descubrí por mi cuenta: ')); q.appendChild(document.createTextNode(d['adn-art'])); c.appendChild(q); }
+      if(d['adn-nuevo']){ var r=el('p'); r.appendChild(el('b','','Esta semana pruebo: ')); r.appendChild(document.createTextNode(d['adn-nuevo'])); c.appendChild(r); }
+      c.className='carnet ver';
+    }
+    function msg(t){ document.getElementById('adn-msg').textContent=t; }
+    var g=null; try{ g=JSON.parse(localStorage.getItem(KEY)||'null'); }catch(e){}
+    if(g){ ids.forEach(function(i){ if(typeof g[i]==='string') document.getElementById(i).value=g[i]; }); pintar(g); }
+    document.getElementById('adn-guardar').addEventListener('click',function(){
+      var d=leer();
+      if(!ids.some(function(i){return d[i];})){ msg('Escribe al menos un dato para armar tu carnet.'); return; }
+      try{ localStorage.setItem(KEY,JSON.stringify(d)); }catch(e){}
+      pintar(d); msg('¡Carnet guardado!');
+    });
+    document.getElementById('adn-borrar').addEventListener('click',function(){
+      ids.forEach(function(i){ document.getElementById(i).value=''; });
+      try{ localStorage.removeItem(KEY); }catch(e){}
+      document.getElementById('adn-carnet').className='carnet'; msg('');
+    });
+  })();
+</script>
+</body>
+</html>

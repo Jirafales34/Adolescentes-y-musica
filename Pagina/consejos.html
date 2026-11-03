@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Consejos — Música, Adolescentes y Salud Mental</title>
+<link rel="stylesheet" href="estilo.css" />
+</head>
+<body>
+<div id="pagina">
+
+  <div class="cinta"><span>♪ ¡Bienvenid@ a mi blog! ♪ &nbsp; La música también cuida tu mente ♥ &nbsp; ★ Proyecto educativo ★ &nbsp; 🛹 Rueda, escucha, respira 🛹</span></div>
+
+  <div class="cabecera">
+    <video src="./luces.mp4" autoplay muted loop playsinline></video>
+    <span class="sticker s1">SK8 ♪</span><span class="sticker s2">Cuida tu<br>mente</span><span class="sticker s3">Haz<br>pausas</span><span class="sticker s4">♥ Respeto</span>
+    <h1><span class="nota">♫</span> Consejos<br>para escuchar sano <span class="nota">♫</span></h1>
+    <p>~ pequeños hábitos para cuidar tu mente y tus oídos ~</p>
+    <div class="estado">✎ Estado de ánimo: <b id="estado-top">inspirad@</b> &nbsp;|&nbsp; ♪ Escuchando: <b>tu playlist favorita</b></div>
+  </div>
+
+  <nav class="menu">
+    <a href="index.html">★ Inicio</a>
+    <a href="efectos.html">Efectos</a>
+    <a href="salud-mental.html">Salud mental</a>
+    <a href="generos.html">Géneros</a>
+    <a href="consejos.html" class="activo">Consejos</a>
+    <a href="guia-padres.html">Guía para padres</a>
+    <a href="recursos.html">Recursos</a>
+  </nav>
+
+  <div class="cuerpo">
+    <aside id="lateral">
+<div class="caja">
+        <h2>♥ Sobre este blog</h2>
+        <div class="in centro">
+          <div class="avatar">🛹</div>
+          <p><b>Proyecto educativo</b></p>
+          <p>Un espacio para entender cómo la música influye en las emociones, la identidad y el bienestar de los adolescentes.</p>
+        </div>
+      </div>
+
+      
+<div class="caja" id="ahora-suena">
+        <h2>♪ Ahora suena</h2>
+        <div class="in">
+          <div class="reproductor" id="as-retro">
+            <div class="eq"><b></b><b></b><b></b><b></b><b></b></div>
+            <span id="as-titulo">▶ Mi playlist de hoy</span>
+            <div class="barra"><i></i></div>
+            <span id="as-ayuda">Elige un género en <a href="generos.html">Géneros</a> y suena aquí.</span>
+          </div>
+          <div class="as-slot" id="as-slot" hidden></div>
+          <button type="button" class="btn-neon btn-sec" id="as-quitar" hidden style="font-size:10px;padding:3px 9px;margin-top:6px">Quitar</button>
+        </div>
+      </div>
+      <div class="caja">
+        <h2>☺ ¿Cómo te sientes?</h2>
+        <div class="in humor">
+          <div class="centro">
+            <button data-e="contentx" data-t="¡Qué bien! Aprovecha con música de ritmo, un rato de baile y compártela con alguien 🎶">😄</button>
+            <button data-e="tranquilx" data-t="Música instrumental, acústica o de tempo lento te ayuda a mantener esa calma 🌿">😌</button>
+            <button data-e="tristx" data-t="Está bien sentirlo. Puedes escuchar algo que te acompañe, pero no te quedes horas en bucle; hablar con alguien también ayuda 💙">😢</button>
+            <button data-e="estresadx" data-t="Respira hondo y prueba música lenta a volumen bajo, sin pantallas por un momento 🫧">😣</button>
+          </div>
+          <p id="humor-msg">Elige una carita</p>
+        </div>
+      </div>
+
+      
+<div class="caja">
+        <h2>☁ Nube de etiquetas</h2>
+        <div class="in nube">
+          <a href="efectos.html">emociones</a><a href="salud-mental.html">estrés</a><a href="generos.html">géneros</a><a href="consejos.html">hábitos</a><a href="guia-padres.html">familia</a><a href="recursos.html">recursos</a><a href="index.html#historia">historia</a><a href="efectos.html">identidad</a><a href="salud-mental.html">bienestar</a><a href="consejos.html">playlists</a>
+        </div>
+      </div>
+
+      
+<div class="caja">
+        <h2>☆ Visitantes</h2>
+        <div class="in centro">
+          <p>Eres el visitante número</p>
+          <div class="contador" id="contador"></div>
+          <div class="insignias" style="margin-top:8px">
+            <span class="i1">♪ MÚSICA<br>ES VIDA</span><span class="i2">BLOG<br>ESCOLAR</span><span class="i3">100%<br>EDUCATIVO</span><span class="i4">MEJOR VISTO<br>CON AUDÍFONOS</span>
+          </div>
+        </div>
+      </div>
+    
+    </aside>
+    <main id="inicio">
+      <article class="entrada">
+        <header>
+          <div class="fecha">📅 3 de noviembre de 2026 &nbsp;|&nbsp; ✎ Sección: Consejos</div>
+          <h2>Tu checklist de escucha sana <span class="nuevo">NUEVO</span></h2>
+        </header>
+        <div class="texto">
+          <p>Marca los hábitos que ya practicas y ve por los que te faltan. Tu avance se guarda en tu navegador.</p>
+          <div class="prog"><i id="check-barra"></i></div>
+          <p id="check-n">0 de 8 hábitos</p>
+          <div id="check-lista"></div>
+          <button type="button" class="btn-neon btn-sec" id="check-reset" style="margin-top:6px;font-size:11px">Reiniciar</button>
+        </div>
+        <footer>
+          <span><span class="etiqueta">hábitos</span><span class="etiqueta">checklist</span></span>
+          <span><a href="index.html">← Inicio</a></span>
+        </footer>
+      </article>
+      <article class="entrada">
+        <header>
+          <div class="fecha">📅 3 de noviembre de 2026 &nbsp;|&nbsp; ✎ Sección: Consejos</div>
+          <h2>La regla 60/60</h2>
+        </header>
+        <div class="texto">
+          <p>Una recomendación muy usada para cuidar el oído: <b>escucha a un máximo del 60 % del volumen y por no más de 60 minutos seguidos</b> con audífonos. Después, descansa unos minutos.</p>
+          <div class="destacada">💡 <b>Señal de alerta:</b> si después de escuchar te zumban los oídos o sientes todo como "apagado", baja el volumen y consulta con un profesional de la salud.</div>
+        </div>
+        <footer>
+          <span><span class="etiqueta">oídos</span><span class="etiqueta">audífonos</span></span>
+          <span><a href="index.html">← Inicio</a></span>
+        </footer>
+      </article>
+      <article class="entrada">
+        <header>
+          <div class="fecha">📅 3 de noviembre de 2026 &nbsp;|&nbsp; ✎ Sección: Consejos</div>
+          <h2>Consejos según la situación</h2>
+        </header>
+        <div class="texto">
+          <ul class="lista-bonita">
+            <li><b>Para estudiar:</b> prueba música instrumental o a volumen bajo; las letras pueden distraer al leer o escribir.</li>
+            <li><b>Para dormir:</b> elige música lenta y sin letra, y usa un temporizador para que se apague sola.</li>
+            <li><b>Cuando estás mal:</b> ponle música a lo que sientes, pero no te quedes horas en bucle. Habla con alguien.</li>
+            <li><b>En la calle:</b> mantén el volumen bajo para escuchar lo que pasa a tu alrededor.</li>
+            <li><b>Con amigos:</b> compartan música, pero respeta que cada quien tiene su gusto.</li>
+          </ul>
+          <p>¿Quieres aplicarlo? Usa el <a href="index.html#playlist">creador de playlist</a>.</p>
+        </div>
+        <footer>
+          <span><span class="etiqueta">situaciones</span><span class="etiqueta">playlists</span></span>
+          <span><a href="index.html">← Inicio</a></span>
+        </footer>
+      </article>
+
+    </main>
+  </div>
+
+  <div class="pie">
+    <p>© 2026 Música, Adolescentes y Salud Mental &nbsp;|&nbsp; Hecho con ♥ y mucha música</p>
+    <p style="margin-top:4px">Contenido informativo y educativo. No reemplaza la consulta con un profesional de la salud.</p>
+    <p><a href="index.html">← Volver al inicio</a> &nbsp;|&nbsp; <a href="#inicio">↑ Subir</a></p>
+  </div>
+</div>
+<script src="app.js"></script>
+<script>
+(function(){
+  var KEY='consejos-cyber';
+  var items=[
+    'Mantengo el volumen moderado (máximo 60 %).',
+    'Hago pausas de unos minutos cada hora con audífonos.',
+    'Cambio de playlist según mi ánimo.',
+    'No uso la música para evitar siempre lo que siento.',
+    'Apago la música con tiempo para dormir bien.',
+    'Escucho con cuidado en la calle.',
+    'Pruebo un género o artista nuevo cada semana.',
+    'Hablo con alguien de confianza si me siento mal por mucho tiempo.'
+  ];
+  var est=[]; try{ est=JSON.parse(localStorage.getItem(KEY)||'[]'); }catch(e){}
+  if(!Array.isArray(est)) est=[];
+  var lista=document.getElementById('check-lista');
+  function pintar(){
+    var n=0; est.forEach(function(v){ if(v) n++; });
+    document.getElementById('check-barra').style.width=Math.round(n/items.length*100)+'%';
+    document.getElementById('check-n').textContent=n+' de '+items.length+' hábitos';
+  }
+  items.forEach(function(t,i){
+    var l=document.createElement('label'); l.className='chk'+(est[i]?' hecho':'');
+    var c=document.createElement('input'); c.type='checkbox'; c.checked=!!est[i];
+    c.addEventListener('change',function(){
+      est[i]=c.checked; l.className='chk'+(c.checked?' hecho':'');
+      try{ localStorage.setItem(KEY,JSON.stringify(est)); }catch(e){}
+      pintar();
+    });
+    var sp=document.createElement('span'); sp.textContent=t;
+    l.appendChild(c); l.appendChild(sp); lista.appendChild(l);
+  });
+  document.getElementById('check-reset').addEventListener('click',function(){
+    est=[]; try{ localStorage.removeItem(KEY); }catch(e){}
+    var cs=lista.querySelectorAll('input'); for(var i=0;i<cs.length;i++){ cs[i].checked=false; cs[i].parentNode.className='chk'; }
+    pintar();
+  });
+  pintar();
+})();
+</script>
+</body>
+</html>

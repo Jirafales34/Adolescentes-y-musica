@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Géneros — Música, Adolescentes y Salud Mental</title>
+<link rel="stylesheet" href="estilo.css" />
+</head>
+<body>
+<div id="pagina">
+
+  <div class="cinta"><span>♪ ¡Bienvenid@ a mi blog! ♪ &nbsp; La música también cuida tu mente ♥ &nbsp; ★ Proyecto educativo ★ &nbsp; 🛹 Rueda, escucha, respira 🛹</span></div>
+
+  <div class="cabecera">
+    <video src="./luces.mp4" autoplay muted loop playsinline></video>
+    <span class="sticker s1">SK8 ♪</span><span class="sticker s2">Prueba<br>algo nuevo</span><span class="sticker s3">Tu<br>sonido</span><span class="sticker s4">♥ Respeto</span>
+    <h1><span class="nota">♫</span> Géneros<br>musicales <span class="nota">♫</span></h1>
+    <p>~ explora, compara y encuentra lo que va contigo ~</p>
+    <div class="estado">✎ Estado de ánimo: <b id="estado-top">inspirad@</b> &nbsp;|&nbsp; ♪ Escuchando: <b>tu playlist favorita</b></div>
+  </div>
+
+  <nav class="menu">
+    <a href="index.html">★ Inicio</a>
+    <a href="efectos.html">Efectos</a>
+    <a href="salud-mental.html">Salud mental</a>
+    <a href="generos.html" class="activo">Géneros</a>
+    <a href="consejos.html">Consejos</a>
+    <a href="guia-padres.html">Guía para padres</a>
+    <a href="recursos.html">Recursos</a>
+  </nav>
+
+  <div class="cuerpo">
+    <aside id="lateral">
+<div class="caja">
+        <h2>♥ Sobre este blog</h2>
+        <div class="in centro">
+          <div class="avatar">🛹</div>
+          <p><b>Proyecto educativo</b></p>
+          <p>Un espacio para entender cómo la música influye en las emociones, la identidad y el bienestar de los adolescentes.</p>
+        </div>
+      </div>
+
+      
+<div class="caja" id="ahora-suena">
+        <h2>♪ Ahora suena</h2>
+        <div class="in">
+          <div class="reproductor" id="as-retro">
+            <div class="eq"><b></b><b></b><b></b><b></b><b></b></div>
+            <span id="as-titulo">▶ Mi playlist de hoy</span>
+            <div class="barra"><i></i></div>
+            <span id="as-ayuda">Elige un género en <a href="generos.html">Géneros</a> y suena aquí.</span>
+          </div>
+          <div class="as-slot" id="as-slot" hidden></div>
+          <button type="button" class="btn-neon btn-sec" id="as-quitar" hidden style="font-size:10px;padding:3px 9px;margin-top:6px">Quitar</button>
+        </div>
+      </div>
+      <div class="caja">
+        <h2>☺ ¿Cómo te sientes?</h2>
+        <div class="in humor">
+          <div class="centro">
+            <button data-e="contentx" data-t="¡Qué bien! Aprovecha con música de ritmo, un rato de baile y compártela con alguien 🎶">😄</button>
+            <button data-e="tranquilx" data-t="Música instrumental, acústica o de tempo lento te ayuda a mantener esa calma 🌿">😌</button>
+            <button data-e="tristx" data-t="Está bien sentirlo. Puedes escuchar algo que te acompañe, pero no te quedes horas en bucle; hablar con alguien también ayuda 💙">😢</button>
+            <button data-e="estresadx" data-t="Respira hondo y prueba música lenta a volumen bajo, sin pantallas por un momento 🫧">😣</button>
+          </div>
+          <p id="humor-msg">Elige una carita</p>
+        </div>
+      </div>
+
+      
+<div class="caja">
+        <h2>☁ Nube de etiquetas</h2>
+        <div class="in nube">
+          <a href="efectos.html">emociones</a><a href="salud-mental.html">estrés</a><a href="generos.html">géneros</a><a href="consejos.html">hábitos</a><a href="guia-padres.html">familia</a><a href="recursos.html">recursos</a><a href="index.html#historia">historia</a><a href="efectos.html">identidad</a><a href="salud-mental.html">bienestar</a><a href="consejos.html">playlists</a>
+        </div>
+      </div>
+
+      
+<div class="caja">
+        <h2>☆ Visitantes</h2>
+        <div class="in centro">
+          <p>Eres el visitante número</p>
+          <div class="contador" id="contador"></div>
+          <div class="insignias" style="margin-top:8px">
+            <span class="i1">♪ MÚSICA<br>ES VIDA</span><span class="i2">BLOG<br>ESCOLAR</span><span class="i3">100%<br>EDUCATIVO</span><span class="i4">MEJOR VISTO<br>CON AUDÍFONOS</span>
+          </div>
+        </div>
+      </div>
+    
+    </aside>
+    <main id="inicio">
+      <article class="entrada">
+        <header>
+          <div class="fecha">📅 3 de noviembre de 2026 &nbsp;|&nbsp; ✎ Sección: Géneros</div>
+          <h2>Todos los géneros, todas las historias <span class="nuevo">NUEVO</span></h2>
+        </header>
+        <div class="texto">
+          <p>Ningún género es "bueno" o "malo" por sí solo. Cada persona lo vive distinto, y lo que importa es <b>cómo te hace sentir</b> y qué mensaje te deja. Estos son algunos de los más escuchados.</p>
+          <button type="button" class="btn-neon" id="sorprende">🎲 Sorpréndeme con un género</button>
+          <p class="pl-msg" id="sorprende-msg"></p>
+          <div class="reproductor-gen" id="reproductor-gen">
+            <h3 class="sub" style="margin-top:0">🎧 Cómo funciona</h3>
+            <p style="margin:0">Pulsa <b>▶ Escuchar aquí</b> en un género y la playlist aparece en el cuadro <b>"Ahora suena"</b> de la barra lateral. <b>Sigue sonando mientras navegas</b> por las otras secciones del sitio.</p>
+            <p class="rg-titulo" id="gen-estado" style="margin-top:6px"></p>
+            <p class="nota-pie">Los reproductores de Spotify necesitan internet. Sin iniciar sesión en Spotify suelen reproducir solo fragmentos de cada canción.</p>
+          </div>
+          <div class="gen-grid" id="gen-grid">
+            <div class="app gen" id="g-rnb" data-playlist="52wknKn1tt23swwK2LmAFu" data-nombre="R&B / Soul / Jazz">
+              <h3>R&amp;B, soul y jazz</h3>
+              <p><b>Suele usarse para:</b> relajarse, ambientar un rato tranquilo y acompañar momentos de calma.</p>
+              <p><b>Ojo con:</b> no usarla solo para aislarte: también puedes compartirla con alguien.</p>
+              <button type="button" class="btn-neon btn-escuchar">▶ Escuchar aquí</button>
+              <p class="nota-pie" style="margin:2px 0 6px">Playlist: R&B / Soul / Jazz</p>
+              <a class="btn-link" href="https://open.spotify.com/search/r%26b%20soul%20jazz" target="_blank" rel="noopener noreferrer">🔍 Spotify</a>
+            </div>
+            <div class="app gen" id="g-urb" data-playlist="3Hk12y4P3EHwskHynJyHfB" data-nombre="Reggaetón / Urbano">
+              <h3>Reguetón y urbano</h3>
+              <p><b>Suele usarse para:</b> bailar, salir con amigos y subir el ánimo.</p>
+              <p><b>Ojo con:</b> letras que normalizan faltas de respeto: pregúntate qué mensaje te dejan.</p>
+              <button type="button" class="btn-neon btn-escuchar">▶ Escuchar aquí</button>
+              <p class="nota-pie" style="margin:2px 0 6px">Playlist: Reggaetón / Urbano</p>
+              <a class="btn-link" href="https://open.spotify.com/search/reguet%C3%B3n" target="_blank" rel="noopener noreferrer">🔍 Spotify</a>
+            </div>
+            <div class="app gen" id="g-rock" data-playlist="3qun320wqm20KMGc4WniYe" data-nombre="Rock / Metal">
+              <h3>Rock y metal</h3>
+              <p><b>Suele usarse para:</b> soltar energía, descargar estrés y sentirse parte de una comunidad.</p>
+              <p><b>Ojo con:</b> el volumen alto en conciertos y con audífonos.</p>
+              <button type="button" class="btn-neon btn-escuchar">▶ Escuchar aquí</button>
+              <p class="nota-pie" style="margin:2px 0 6px">Playlist: Rock / Metal</p>
+              <a class="btn-link" href="https://open.spotify.com/search/rock%20metal" target="_blank" rel="noopener noreferrer">🔍 Spotify</a>
+            </div>
+            <div class="app gen" id="g-chill" data-playlist="29nPMwMfVGUeZCBpBUVpjK" data-nombre="Chill / Clásica">
+              <h3>Chill y música clásica</h3>
+              <p><b>Suele usarse para:</b> estudiar, concentrarse, relajarse o prepararse para dormir.</p>
+              <p><b>Ojo con:</b> quedarte dormid@ con audífonos a volumen alto: usa un temporizador.</p>
+              <button type="button" class="btn-neon btn-escuchar">▶ Escuchar aquí</button>
+              <p class="nota-pie" style="margin:2px 0 6px">Playlist: Chill / Clásica</p>
+              <a class="btn-link" href="https://open.spotify.com/search/chill%20m%C3%BAsica%20cl%C3%A1sica" target="_blank" rel="noopener noreferrer">🔍 Spotify</a>
+            </div>
+            <div class="app gen" id="g-trap" data-playlist="32v9qwLsSj4xjH1GyeZ7nm" data-nombre="Trap / Hip Hop">
+              <h3>Trap y hip hop</h3>
+              <p><b>Suele usarse para:</b> contar historias propias, ritmo y expresión con las palabras.</p>
+              <p><b>Ojo con:</b> algunas letras: fíjate en el mensaje, no solo en el ritmo.</p>
+              <button type="button" class="btn-neon btn-escuchar">▶ Escuchar aquí</button>
+              <p class="nota-pie" style="margin:2px 0 6px">Playlist: Trap / Hip Hop</p>
+              <a class="btn-link" href="https://open.spotify.com/search/trap%20hip%20hop" target="_blank" rel="noopener noreferrer">🔍 Spotify</a>
+            </div>
+            <div class="app gen" id="g-pop" data-playlist="1JBLIl4K5z4ClpCLDatpuy" data-nombre="Pop">
+              <h3>Pop</h3>
+              <p><b>Suele usarse para:</b> animarse, cantar y compartir con amigos.</p>
+              <p><b>Ojo con:</b> compararte con la imagen perfecta que muestran algunos artistas.</p>
+              <button type="button" class="btn-neon btn-escuchar">▶ Escuchar aquí</button>
+              <p class="nota-pie" style="margin:2px 0 6px">Playlist: Pop</p>
+              <a class="btn-link" href="https://open.spotify.com/search/pop" target="_blank" rel="noopener noreferrer">🔍 Spotify</a>
+            </div>
+          </div>
+          <div class="destacada">💡 <b>Reto:</b> elige un género que casi nunca escuchas y dale una semana. Anota qué sentiste en tu <a href="index.html#apps">carnet de ADN musical</a>.</div>
+          <p class="nota-pie">Esta lista es una guía general, no cubre todos los estilos ni todas las formas de vivirlos.</p>
+        </div>
+        <footer>
+          <span><span class="etiqueta">géneros</span><span class="etiqueta">descubrir</span></span>
+          <span><a href="index.html">← Inicio</a></span>
+        </footer>
+      </article>
+
+    </main>
+  </div>
+
+  <div class="pie">
+    <p>© 2026 Música, Adolescentes y Salud Mental &nbsp;|&nbsp; Hecho con ♥ y mucha música</p>
+    <p style="margin-top:4px">Contenido informativo y educativo. No reemplaza la consulta con un profesional de la salud.</p>
+    <p><a href="index.html">← Volver al inicio</a> &nbsp;|&nbsp; <a href="#inicio">↑ Subir</a></p>
+  </div>
+</div>
+<script src="app.js"></script>
+<script>
+(function(){
+  var cards=document.querySelectorAll('.gen');
+  var est=document.getElementById('gen-estado');
+  var msg=document.getElementById('sorprende-msg');
+  function marcar(id){
+    for(var i=0;i<cards.length;i++){ cards[i].classList.toggle('activa',cards[i].getAttribute('data-playlist')===id); }
+  }
+  function elegir(card){
+    if(!window.AhoraSuena) return;
+    var id=card.getAttribute('data-playlist'), nombre=card.getAttribute('data-nombre');
+    window.AhoraSuena.set(id,nombre);
+    marcar(id);
+    est.textContent='Sonando en "Ahora suena": '+nombre;
+    window.AhoraSuena.mostrar();
+  }
+  var bs=document.querySelectorAll('.btn-escuchar');
+  for(var i=0;i<bs.length;i++){ bs[i].addEventListener('click',function(){ elegir(this.closest('.gen')); }); }
+  document.getElementById('sorprende').addEventListener('click',function(){
+    var prev=document.querySelector('.gen.resalta'); if(prev) prev.classList.remove('resalta');
+    var el=cards[Math.floor(Math.random()*cards.length)];
+    el.classList.add('resalta');
+    msg.textContent='Tu género de hoy: '+el.querySelector('h3').textContent+'. ¡Dale una oportunidad!';
+    elegir(el);
+  });
+  var a=window.AhoraSuena&&window.AhoraSuena.actual();
+  if(a){ marcar(a.id); est.textContent='Sonando en "Ahora suena": '+a.nombre; }
+  document.addEventListener('ahorasuena',function(){ marcar(''); est.textContent=''; });
+})();
+</script>
+</body>
+</html>
